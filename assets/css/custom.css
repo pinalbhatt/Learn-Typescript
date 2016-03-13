@@ -1,15 +1,12 @@
-.body {
 
-}
 #siteHeader {
     font-family: Quicksand, 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
-#siteLogo{
-    margin-top: 50px;
-}
+
 .navbar-brand {
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #f00 !important;
+    text-shadow: 2px 2px 15px #000000 !important;
+    font-family: "Helvetica Neue";
+    font-size: larger;
 }
 .slides {
     margin-top: 0 !important;
@@ -25,4 +22,14 @@
 }
 .jtxt {
     text-align: justify;
+}
+
+
+
+body:after {
+    position: absolute;
+    top: 51px;
+    left: 10px;
+    margin: 0;
+    content: url("/assets/imgs/logo_small.png");
 }
