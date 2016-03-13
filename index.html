@@ -495,6 +495,23 @@ Reveal.addEventListener( 'customevent', function() {
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
+                menu: {
+                    side: "left",
+                    numbers: true,
+                    hideMissingTitles: false,
+                    markers: false,
+                    custom: [
+                        { title: 'Links', icon: '<i class="fa fa-external-link">', src: '/assets/html/links.html' },
+                        { title: 'About', icon: '<i class="fa fa-info">', src: '/assets/html/about.html' }
+                    ],
+                    themes: false,
+                    transitions: false,
+                    openButton: true,
+                    openSlideNumber: false,
+                    keyboard: true
+                },
+
+
 				// Optional reveal.js plugins
 				dependencies: [
 					{ src: '/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -502,7 +519,8 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: '/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: '/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: '/revealjs/plugin/zoom-js/zoom.js', async: true },
-					{ src: '/revealjs/plugin/notes/notes.js', async: true }
+					{ src: '/revealjs/plugin/notes/notes.js', async: true },
+                    { src: '/menu/menu.js' }
 				]
 			});
 
