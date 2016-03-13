@@ -102,7 +102,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section data-menu-title="Home">
                     <h4>Let's lean</h4>
 					<h1 style="text-transform: none">TypeScript</h1>
 					<h3 style="text-transform: none">Tutorial for JavaScript Developers</h3>
@@ -480,6 +480,7 @@ Reveal.addEventListener( 'customevent', function() {
 		<script src="/revealjs/js/reveal.js"></script>
 
 		<script>
+            var gaPropertyID = 'UA-9753249-15';
 
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -526,6 +527,7 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: '/revealjs/plugin/notes/notes.js', async: true },
                     { src: '/menu/menu.js' },
                     { src: '/plugins/chalkboard/chalkboard.js' },
+                    { src: '/ga/dist/reveal-ga.min.js' }
 				],
                 keyboard: {
                     67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
@@ -535,6 +537,10 @@ Reveal.addEventListener( 'customevent', function() {
                     68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
                 }
 			});
+
+            window.addEventListener('reveal-ga', function (ev) {
+                console.log('New Reveal GA event:', ev.detail);
+            });
 
 		</script>
 

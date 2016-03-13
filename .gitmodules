@@ -7,3 +7,6 @@
 [submodule "menu"]
 	path = menu
 	url = https://github.com/denehyg/reveal.js-menu.git
+[submodule "ga"]
+	path = ga
+	url = https://github.com/stevegrunwell/reveal-ga.git
