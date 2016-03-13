@@ -1,0 +1,11 @@
+.body {
+    margin-top: 50px;
+}
+#siteHeader {
+    font-family: Quicksand, 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #f00 !important;
+}
