@@ -29,6 +29,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? '/revealjs/css/print/pdf.css' : '/revealjs/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+        <link rel="stylesheet" href="/plugin/title-footer/title-footer.css">
 		<link rel="stylesheet" href="/assets/css/custom.css">
 
 		<!--[if lt IE 9]>
@@ -57,11 +58,14 @@
                     <h3 class="ttfNone">Table Of Contents</h3>
                     <ul>
                         <li><a href="#/tsIntroduction">Introduction</a></li>
-                        <li><a href="#/Topic1">Topic1</a></li>
-                        <li><a href="#/Topic1">Topic1</a></li>
-                        <li><a href="#/Topic1">Topic1</a></li>
-                        <li><a href="#/Topic1">Topic1</a></li>
-                        <li><a href="#/Topic1">Topic1</a></li>
+                        <li><a href="#/tsDataTypes">Basic Data Types</a></li>
+                        <li><a href="#/tsTypeInference">Type Inference & Compatibility</a></li>
+                        <li><a href="#/tsFunctions">Functions</a></li>
+                        <li><a href="#/tsInterfaces">Interfaces</a></li>
+                        <li><a href="#/tsClasses">Classes</a></li>
+                        <li><a href="#/tsModules">Modules</a></li>
+                        <li><a href="#/tsGenerics">Generics</a></li>
+                        <li><a href="#/tsMixins">Mixins</a></li>
                     </ul>
 
                 </section>
@@ -80,6 +84,69 @@
                     </section>
                     <section id="tsIntroduction-1">
                         <h2>Growth Of Javascript</h2>
+                        <p>
+                            reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+                        </p>
+                    </section>
+                </section>
+
+                <section id="tsDataTypes">
+                    <section id="tsDataTypes-0">
+                        <h2 class="ttfNone">Basic Data Types</h2>
+
+                        <ul>
+                            <li><a href="#/tsDataTypes-1">Topic x</a></li>
+                            <li><a href="#/tsDataTypes-2">Topic x</a></li>
+                            <li><a href="#/tsDataTypes-3">Topic x</a></li>
+                            <li><a href="#/tsDataTypes-4">Topic x</a></li>
+                            <li><a href="#/tsDataTypes-5">Topic x</a></li>
+                            <li><a href="#/tsDataTypes-6">Topic x</a></li>
+                        </ul>
+                    </section>
+                    <section id="tsDataTypes-1">
+                        <h2>Hello There</h2>
+                        <p>
+                            reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+                        </p>
+                    </section>
+                </section>
+
+                <section id="tsTypeInference">
+                    <section id="tsTypeInference-0">
+                        <h2 class="ttfNone">Type Inference & Compatibility</h2>
+
+                        <ul>
+                            <li><a href="#/tsTypeInference-1">Topic x</a></li>
+                            <li><a href="#/tsTypeInference-2">Topic x</a></li>
+                            <li><a href="#/tsTypeInference-3">Topic x</a></li>
+                            <li><a href="#/tsTypeInference-4">Topic x</a></li>
+                            <li><a href="#/tsTypeInference-5">Topic x</a></li>
+                            <li><a href="#/tsTypeInference-6">Topic x</a></li>
+                        </ul>
+                    </section>
+                    <section id="tsTypeInference-1">
+                        <h2>Hello There</h2>
+                        <p>
+                            reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+                        </p>
+                    </section>
+                </section>
+
+                <section id="tsFunctions">
+                    <section id="tsFunctions-0">
+                        <h2>Functions</h2>
+
+                        <ul>
+                            <li><a href="#/tsFunctions-1">Topic x</a></li>
+                            <li><a href="#/tsFunctions-2">Topic x</a></li>
+                            <li><a href="#/tsFunctions-3">Topic x</a></li>
+                            <li><a href="#/tsFunctions-4">Topic x</a></li>
+                            <li><a href="#/tsFunctions-5">Topic x</a></li>
+                            <li><a href="#/tsFunctions-6">Topic x</a></li>
+                        </ul>
+                    </section>
+                    <section id="tsFunctions-1">
+                        <h2>Hello There</h2>
                         <p>
                             reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
                         </p>
@@ -439,9 +506,9 @@ Reveal.addEventListener( 'customevent', function() {
 
                 menu: {
                     side: "left",
-                    numbers: true,
-                    hideMissingTitles: false,
-                    markers: false,
+                    numbers: false,
+                    hideMissingTitles: true,
+                    markers: true,
                     custom: [
                         { title: 'Links', icon: '<i class="fa fa-external-link">', src: '/assets/html/links.html' },
                         { title: 'About', icon: '<i class="fa fa-info">', src: '/assets/html/about.html' }
@@ -468,7 +535,8 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: '/revealjs/plugin/notes/notes.js', async: true },
                     { src: '/menu/menu.js' },
                     { src: '/plugins/chalkboard/chalkboard.js' },
-                    { src: '/ga/dist/reveal-ga.min.js' }
+                    { src: '/ga/dist/reveal-ga.min.js' },
+                    { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize("Learn TypeScript - from the desk of Pinal Bhatt"); } }
 				],
                 keyboard: {
                     67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
