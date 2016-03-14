@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ga" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/menu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugins/menu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/revealjs" vcs="Git" />
   </component>
 </project>
