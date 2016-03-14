@@ -28,7 +28,7 @@
 
 body:after {
     position: absolute;
-    top: 51px;
+    top: 5px;
     left: 10px;
     margin: 0;
     content: url("/assets/imgs/logo_small.png");
