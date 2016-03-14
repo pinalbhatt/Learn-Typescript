@@ -1,9 +1,4 @@
 [submodule "revealjs"]
 	path = revealjs
 	url = https://github.com/hakimel/reveal.js
-[submodule "plugins"]
-	path = plugins
-	url = https://github.com/rajgoel/reveal.js-plugins.git
-[submodule "ga"]
-	path = ga
-	url = https://github.com/stevegrunwell/reveal-ga.git
+
